@@ -3,3 +3,8 @@ hr{
   border-style: inset;
   border-width: 10px;
 }
+h1{
+  font-family: normal;
+  color: red;
+  font-size: 30px;
+}
