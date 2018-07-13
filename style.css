@@ -1,0 +1,17 @@
+hr{
+		  display: block;
+		  border-style: inset;
+		  border-width: 5px;
+	}
+h1{
+		  font-family: normal;
+		  color: blue;
+		  font-size: 150px;
+		  letter-spacing: 4px;
+}
+h3{
+		  font-family: normal;
+		  color: orange;
+		  font-size: 150px;
+		  letter-spacing: 2.5px;
+}
