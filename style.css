@@ -38,5 +38,12 @@ h4{
 	color: grey;
 	font-size: 40px;
 }
-background-size: 30px 30px;
+.tiledBackground {
+  background-image: url(https://drive.google.com/uc?id=1Fys7tlJPUwIHeReGMnqby-GisW_9JV2k);
+  background-size: 150px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+  color: pink;
+}
 
