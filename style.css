@@ -35,18 +35,18 @@ h2{
 }
 h4{
 	font-family: cursive;
-	color: grey;
+	color: black;
 	font-size: 40px;
 }
 html{
   background: url(https://drive.google.com/uc?id=1Fys7tlJPUwIHeReGMnqby-GisW_9JV2k);
   background-size: 1600px 280px;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center top;
 }
 html{
   background: url(https://drive.google.com/uc?id=1MDdJjAFF314m6u3M-2fcNp3bV4jNoBqH);
-  background-size: 1600px 450px;
+  background-size: 1600px 550px;
   background-repeat: no-repeat;
   background-position: bottom;
 }
