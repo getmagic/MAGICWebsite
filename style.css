@@ -38,5 +38,8 @@ h4{
 	color: grey;
 	font-size: 40px;
 }
- <background-image: url ("images.jgp);
+img {
+    width: 50%;
+    height: auto;
+}
 
