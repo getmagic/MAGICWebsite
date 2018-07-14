@@ -1,0 +1,45 @@
+hr{
+	display: block;
+	border-style: inset;
+	border-width: 1px;
+}
+h1{
+	font-family: normal;
+	color: maroon;
+	font-size: 150px;
+	letter-spacing: 6px;
+}
+th{
+	font-family: normal;
+	color: black;
+	font-size: 50px;
+	letter-spacing:3.5px;
+}
+p{
+	font-family: normal;
+	color: blue;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+h3{
+	font-family: cursive;
+	color: orange;
+	font-size: 80px;
+	letter-spacing: 2px;
+}
+h2{
+	font-family: cursive;
+	color: orange;
+	font-size: 85px;
+	letter-spacing: 4px;
+}
+h4{
+	font-family: cursive;
+	color: grey;
+	font-size: 40px;
+}
+html{
+  background: url(https://drive.google.com/uc?id=1Fys7tlJPUwIHeReGMnqby-GisW_9JV2k);
+  background-size: 1600px 280px;
+  background-repeat: no-repeat;
+}
