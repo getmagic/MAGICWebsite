@@ -38,16 +38,13 @@ h4{
 	color: black;
 	font-size: 40px;
 }
-.myclass {
-  background: background1, background2;
-}
-background1{
+#div1 {
   background: url(https://drive.google.com/uc?id=1Fys7tlJPUwIHeReGMnqby-GisW_9JV2k);
   background-size: 1600px 280px;
   background-repeat: no-repeat;
   background-position: left top;
 }
-background2{
+#div2{
   background: url(https://drive.google.com/uc?id=1usjI6Aflw8Vwj7EWC8S_OGWjCbdEfti0);
   background-size: 1600px 580px;
   background-repeat: no-repeat;
