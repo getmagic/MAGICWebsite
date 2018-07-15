@@ -40,11 +40,11 @@ h4{
 }
 html{
   background: url(https://drive.google.com/uc?id=1Fys7tlJPUwIHeReGMnqby-GisW_9JV2k);
- background-color: aqua;
   background-size: 1600px 280px;
   background-repeat: no-repeat;
   background-position: left top;
 }
+background-color: aqua;
 /*{
   background-color: red;
   background-size:1600px 580px;
