@@ -45,6 +45,14 @@ html{
   background-position: left top;
 }
 background-color: aqua;
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
 /*{
   background-color: red;
   background-size:1600px 580px;
