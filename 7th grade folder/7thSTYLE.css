@@ -3,9 +3,19 @@ h1{
 	color: purple;
 	font-size: 100px;
 }
+h2{
+	font-family: cursive;
+	color: purple;
+	font-size: 80px;
+}
+h4{
+	font-family: cursive;
+	color: indigo;
+	font-size: 50px;
+}
 p{
 	font-family: normal;
-	color: indigo;
+	color: purple;
 	font-size: 30px;
 	letter-spacing:3.5px;
 }
