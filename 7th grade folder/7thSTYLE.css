@@ -1,4 +1,16 @@
 h1{
+	font-family: courier;
+	color: maroon;
+	font-size: 150px;
+	letter-spacing: 6px;
+}
+th{
+	font-family: normal;
+	color: black;
+	font-size: 50px;
+	letter-spacing:3.5px;
+}
+h3{
 	font-family: cursive;
 	color: purple;
 	font-size: 80px;
