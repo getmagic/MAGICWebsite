@@ -31,3 +31,25 @@ p{
 	font-size: 30px;
 	letter-spacing:3.5px;
 }
+html{
+  background: url(https://drive.google.com/uc?id=1Fys7tlJPUwIHeReGMnqby-GisW_9JV2k);
+  background-size: 1600px 280px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    right: 50%;
+    margin-right: -3px;
+    top: 0;
+}
