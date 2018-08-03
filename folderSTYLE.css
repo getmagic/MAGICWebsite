@@ -1,6 +1,11 @@
+p{
+	font-family: cursive;
+	color: purple;
+	font-size: 100px;
+}
 th{
 	font-family: normal;
-	color: purple;
+	color: blue;
 	font-size: 50px;
 	letter-spacing:3.5px;
 }
