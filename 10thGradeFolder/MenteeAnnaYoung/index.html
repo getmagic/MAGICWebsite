@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  <!--- Im doing this so that the changes with display in github --->
+
+  </style>
+</head>
+
+<body>
+
+
+<p style = "color: red ;font-size: 20px; font-family:Arial"> This is the list of things I need to do this week:</p>
+<div id="myDIV" class="header" style="background-color:red;">
+  <h2>My To Do List</h2>
+  <button style = "color:white; background-color: green" onclick="addFunction()">Add</button>
+
+
+  <input type="text" id="priorityInput" placeholder= "Priority (1-3)...">
+  <input type="text" id="myInput" placeholder="Title...">
+
+</div>
+
+<ul id="myUL">
+<li style = "background-color:red;" >Hit the gym</li>
+<li style = "background-color:red;" >Pay bills</li>
+<li style = "background-color:yellow;">Meet George</li>
+<li style = "background-color:yellow;">Buy Eggs</li>
+<li style = "background-color:green;" >Read a book</li>
+<li style = "background-color:green;"id="tester">Organize office</li>
+
+
+</ul>
+<div id="buttonSection" class="header" style="background-color:blue;">
+
+<button style= "color:red; background-color:white;" onclick= "deleteFunction()">Delete</button>
+<button style = "color:red; background-color:white" onclick= "addbackFunction()">Add Back an Item</button>
+<button style = "color:red; background-color:white;" onclick="myFunction()">Click for a Question!</button>
+<button style = "color:red; background-color:white;" onclick= "deleteLastFunction()">Delete Last Entry </button>
+
+</div>
+<p id="demo"></p>
+<a href="new.html">link new</a>
+<script>
+var child;
+function addbackFunction(){
+
+  var parent = document.getElementById("myUL");
+
+  parent.appendChild(child);
+}
+function deleteFunction(){
+  var parent = document.getElementById("myUL");
+  child = document.getElementById("tester");
+  parent.removeChild(child);
+}
+
+function deleteLastFunction() {
+    var my_ul = document.getElementById("myUL");
+    var li_array = my_ul.getElementsByTagName("LI");
+    var lilength = li_array.length;
+    console.log(lilength);
+    child = li_array[lilength -1];
+    my_ul.removeChild(child)
+}
+
+function addFunction(){
+  var inputValue= document.getElementById("myInput").value; var priorityInput= document.getElementById('priorityInput').value;
+
+  var textnode = document.createTextNode(inputValue);
+  document.getElementById("myInput").value = "";
+  var newLI = document.createElement("LI");
+  newLI.appendChild(textnode);
+
+  myUL = document.getElementById("myUL")
+  var list = document.getElementsByTagName("LI");
+  added = false;
+
+
+
+  if (priorityInput === "1") {
+       newLI.style.backgroundColor = "red";
+       for (let i = 0;  i < list.length; i++)
+       {
+         console.log("index " + i + "color  " + list[i].style.backgroundColor);
+         if (list[i].style.backgroundColor === "green" ||
+          list[i].style.backgroundColor === "yellow" ) {
+           myUL.insertBefore(newLI, list[i]);
+           added = true;
+           break;
+         }
+       }
+     }
+
+     if (priorityInput === "2") {
+       newLI.style.backgroundColor = "yellow";
+       for (let i = 0;  i < list.length; i++)
+       {
+         console.log("index " + i + "color " + list[i].style.backgroundColor);
+         if (list[i].style.backgroundColor === "green") {
+           myUL.insertBefore(newLI, list[i]);
+           added = true;
+           break;
+         }
+       }
+    }
+
+     if (priorityInput === "3") {
+       newLI.style.backgroundColor = "green";
+     }
+
+     if (added === false) {
+       myUL.appendChild(newLI);
+     }
+
+
+
+  document.getElementById("priorityInput").value = "";
+  console.log(priorityInput)
+
+}
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Did you complete your tasks??";
+}
+</script>
+<script>
+console.log("Tasks")
+let tasknumbers = ['1','2','3','4','5']
+for (let i = 0; i<tasknumbers.length; i++){
+  console.log('Task'+ tasknumbers[i])}
+
+
+</script>
+</body>
+</html>
