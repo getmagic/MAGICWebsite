@@ -29,6 +29,12 @@ form{
   font-style:italic;  
 }*/
 
+h2{
+    font-family: cursive;
+	color: purple;
+	font-size: 60px;
+}
+
 .continue{  
   background-color: darksalmon;
   color:black;
