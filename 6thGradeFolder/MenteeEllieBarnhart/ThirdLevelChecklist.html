@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <script type=" text/javascript " src="javascriptcode.js "></script>
+        <script> window.onload = function() {
+   document.getElementById("currentPoints").innerHTML = "xP=" + localStorage.getItem("xP") + "<br> gP=" + localStorage.getItem("gP");
+} </script>
+          <script type=" text/javascript " src="Scoring.js "></script>
+        <script type=" text/javascript " src="TriviaQuestions.js "></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+   <center>
+    <p> In this level, you will be focusing on Recycling and giving to people. Recycling is wonderful for the environment because
+ it can help reduce the amount of pollution in the environment.
+ For this level's challenge, an established mayor is worried about the anual "Giving Back" ceremony that is in two days. She was
+ supposed to show the people that she is qualified for the mayor by doing something that will help the world. She forgot and needs
+ your help to save "Giving Back" day.  She is willing to pay you 300 gold pieces
+ for every checkbox you complete or if you complete two checkboxes and correctly answer a Trivia question. You have an chance to win 
+ 900 gold pieces if you complete everything.</p>
+<br>
+<br>
+        <div id="checkbox1" style="display:block;">
+            <form>
+            <!--Inside getPoints(), there are two numbers; the first one corresponds to the level and the second corresponds to the question # -->
+                <input type="checkbox" id="checkButton1" onChange="getPoints(3, 1); showButton();">Try to reuse empty packages for other uses (A cardboard box as a storage box), (250 experience points)
+                <br>
+                <br>
+            </form>
+        </div>
+
+        <div id="checkbox2" style="display:none;">
+            <form>
+            <!-- Inside Trivia Questions, the level # has to be passed-->
+                <input type="checkbox" id="checkButton2" name="checkfield" onChange="getPoints(3, 2); showTriviaQuestion(this,3);"> Research where items should go in waste bins. For example; Food in Compost, Tin foil in the Recycle bin and, Styrofoam in Landfill (200 experience points)
+                <br>
+            </form>
+            <p id="demo"></p>
+        </div>
+
+        <button type="submit" id="nextQuestion" onclick="showNextCheckbox()" disabled>Next Question</button>
+
+
+        <div id="checkbox3" style="display:none;">
+            <form>
+                <input type="checkbox" id="checkButton3" onChange="getPoints(3, 3); showNextCheckbox();" name="checkfield">Donate all unneeded/already read magazines, books, newspapers to nursing homes, clinics, charity, hospitals, waiting rooms, etc. (500 experience points)
+                <br>
+            </form>
+            <div id="nextLevel" > 
+	<input type="button" id="nextLevelButton" onclick="location.href='FourthLevelChecklist.html';" value="Next Level" disabled/>
+                
+	</div>
+        </div>
+        <div id="currentPoints">
+        <!-- The number of current XP and GP points-->
+        XP = <br>
+        GP = <br>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</center>
+    </body>
+
+</html>
