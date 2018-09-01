@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <script type=" text/javascript " src="javascriptcode.js "></script>
+    <script>
+      window.onload = function() {
+        document.getElementById("currentPoints").innerHTML = "xP=" + localStorage.getItem("xP") + "<br> gP=" + localStorage.getItem("gP");
+      }
+    </script>
+    <script type=" text/javascript " src="Scoring.js "></script>
+    <script type=" text/javascript " src="TriviaQuestions.js "></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <center>
+    <p>In this level, we will be focusing on electrical pollution and the effects of it. Electrical 
+ pollution can cause many devastating things to happen to the environment. For example, the burning of fossil fuels can emit many 
+ unhealthy gases into the air and traps some of the gases that would usually go into space and thus, traps the Sun's heat and 
+ makes the planet feel warmer.
+ A shopkeeper has been complaining of the smell of too much exhaust around his shop and making the air hard to breathe. He wants you 
+ to complete a checklist that will help the exhaust and pollution around his shop disappear. He is willing to pay you 200 gold pieces
+ for every checkbox you complete or if you complete two checkboxes and correctly answer a Trivia question. You have an chance to win 
+ 600 gold pieces if you complete everything. </p>
+      <div id="checkbox1" style="display:block;">
+        <form>
+          <!--Inside getPoints(), there are two numbers; the first one corresponds to the level and the second corresponds to the question # -->
+          <input type="checkbox" id="checkButton1" onChange="getPoints(2, 1); showButton();">Look around: Are you in a room or near a room and the lights are on, but they don’t need to be? If they are, turn them(200 experience points)
+          <br>
+          <br>
+          <img src="Cycle.png" alt="Cycle" width="100" height="100"> 
+    </form>
+    </div>
+
+    <div id="checkbox2" style="display:none;">
+      <form>
+        <!-- Inside Trivia Questions, the level # has to be passed-->
+        <input type="checkbox" id="checkButton2" name="checkfield" onChange="getPoints(2, 2); showTriviaQuestion(this,2 );"> Turn to a person near you and spread awareness about this issue (200 experience points)
+        <br>
+      </form>
+      <p id="demo"></p>
+    </div>
+
+    <button type="submit" id="nextQuestion" onclick="showNextCheckbox()" disabled>Next Question</button>
+
+
+    <div id="checkbox3" style="display:none;">
+      <form>
+        <input type="checkbox" id="checkButton3" onChange="getPoints(2, 3); showNextCheckbox();" name="checkfield"> Walk instead of drive for 3 days in a row (200 experience points)
+        <br>
+      </form>
+        <div id="nextLevel">
+          <input type="button" id="nextLevelButton" onclick="location.href='ThirdLevelChecklist.html';" value="Next Level" disabled/>
+        </div>
+    </div>
+    <div id="currentPoints">
+      <!-- The number of current XP and GP points-->
+      XP = <br> GP = <br>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </center>
+  </body>
+
+</html>
